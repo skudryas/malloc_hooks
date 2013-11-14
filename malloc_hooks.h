@@ -6,7 +6,7 @@ extern "C" {
 #endif
 
 void my_malloc_init_hooks();
-char * my_malloc_dump();
+char * my_malloc_dump(); //retval must be freed by my_malloc_free_dump
 void my_malloc_free_dump(void * p);
 extern int global_mem_usage_mhooks;
 
