@@ -214,6 +214,7 @@ static char * my_malloc_make_graph()
       result_ss << "\t" << bt_symb[j] << "\t\t\t" << bt_symb2[j] << "\n";
     }
     free(bt_symb);
+    free(bt_symb2);
     if (it == result_map.begin())
       break;
   }
